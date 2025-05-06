@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" target='_blank' content="0; url=https://de-ravendell.github.io/main">
-    <title>Redirecting...</title>
+    <title>Opening New Tab</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,12 +18,17 @@
             max-width: 600px;
         }
     </style>
+    <script>
+        window.onload = function() {
+            window.open('https://de-ravendell.github.io/main', '_blank');
+        };
+    </script>
 </head>
 <body>
     <div class="redirect-message">
-        <h1>Redirecting you to our main site</h1>
-        <p>Please wait while we take you to <a href="https://de-ravendell.github.io/main">https://de-ravendell.github.io/main</a>.</p>
-        <p>If you are not redirected automatically, please click the link above.</p>
+        <h1>Opening our main site in a new tab</h1>
+        <p>We're opening <a href="https://de-ravendell.github.io/main" target="_blank">https://de-ravendell.github.io/main</a> in a new tab for you.</p>
+        <p>If the new tab doesn't open automatically, please click the link above.</p>
     </div>
 </body>
 </html>
